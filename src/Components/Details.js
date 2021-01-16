@@ -374,10 +374,11 @@ this.setState({ formModalIsOpen: false });
                                 <div className="row">
                                     <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 subtotal" style={{ paddingLeft: '26px' }}>Subtotal</div>
                                     <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 subtotal">&#8377; {subTotal}</div>
-                                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"><button className="btn btn-danger" style={{ marginLeft: '30px' }} onClick={this.openDetailsWindow}>Pay Now</button>
+                                   
+                                    
                                     </div>
                                 </div>
-                            </div>
+                           
                         </div>
 </Modal>
 <Modal
