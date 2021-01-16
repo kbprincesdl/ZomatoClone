@@ -298,7 +298,7 @@ class Filter extends React.Component {
         console.log(`restaurantlist ${restaurants}`);
         return (
             <div>
-                <div id="myId" className="heading-filter">Breakfast Places in Delhi</div>
+                <div id="myId" className="heading-filter">Breakfast Places to look for food</div>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-3 col-md-3 col-lg-3">

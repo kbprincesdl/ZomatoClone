@@ -181,14 +181,7 @@ background-color:#ffffff;
 /* display: inline-block; */
 margin-bottom: 5px;
 }
-.left-block{
-width: 30%;
-height: 100%;
-/* height: 100%; */
-display: inline-block;
-/* border: 2px solid blue; */
 
-}
 
 .right-block{
 width: 65%;
@@ -200,13 +193,16 @@ vertical-align: top;
 
 
 }
+/* 
 .img2{
 width: 80%;
 height: 100px;
 margin: 2px;
 border-radius: 25px;
 
-}
+} */
+
+
 .Right-Subheading {
 width: 90%;
 
@@ -346,191 +342,7 @@ opacity: 0.97;
 }
 
 }
-/* Media Query 2  */
-@media only screen and (max-Width: 992px){
-/* .logo {
-position: absolute;
-top: 5%;
-left: 40%;
-border-radius: 50%;
 
-width: 90px;
-height: 90px;
-font-size: 58px;
-text-align: center;
-
-height: 50px;
-border-radius: 50%;
-width: 50px;
-font-size: 36px;
-text-align: center;
-background-color: white;
-color: red;
-
-} */
-/* .Find-the-best-restaurants-cafs-and-bars {
-width: 100%;
-
-position: relative;
-display: inline-block;
-top: -300px;
-left:18%;
-font-family: Poppins;
-font-size: 20px;
-font-weight: 600;
-font-stretch: normal;
-font-style: normal;
-line-height: 1.53;
-letter-spacing: normal;
-color:white;
-
-} */
-.main-block{
-/* width: 340px; */
-height: 100%;
-width:100%;
-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-background-color:#ffffff;
-/* display: inline-block; */
-margin-bottom: 5px;
-margin: 5px;
-}
-.left-block{
-width: 45%;
-height: 100%;
-/* height: 100%; */
-display: inline-block;
-/* border: 2px solid blue; */
-
-}
-
-.right-block{
-width: 52%;
-height: 100%;
-padding-left: 2px;
-display: inline-block;
-/* border: 2px solid blue; */
-vertical-align: top;
-/* float: left; */
-
-}
-.img2{
-/* margin: 2px; */
-/* padding-bottom: 25px; */
-/* padding-left:5px; */
-/* height: 30%; */
-width: 20%;
-height: 100%;
-margin: 1px;
-
-}
-
-.Right-Subheading {
-width: 55%;
-
-font-family: Poppins;
-font-size: 15px;
-font-weight: 300;
-font-stretch: normal;
-font-style: normal;
-
-letter-spacing: normal;
-text-align: left;
-color: #192f60;
-}
-
-.Start-with-exclusive-options {
-width: 20%;
-
-font-family: Poppins;
-font-size: 12px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: 1.5;
-letter-spacing: normal;
-text-align: left;
-color: #8c96ab;
-}
-/* 
-.Login {
-position: relative;
-display: inline;
-left: 58%;
-top: -385px;
-
-width: 1%;
-height: 2%;
-font-family: Poppins;
-font-size: 16px;
-font-weight: 500;
-font-stretch: normal;
-font-style: normal;
-line-height: 1.56;
-letter-spacing: normal;
-color: white;
-} */
-
-
-/* .Please-type-a-location {
-background-color: white;
-position: relative;
-top: -270px;
-left:18%;
-width: 180px;
-height: 30px;
-font-family: Poppins;
-font-size: 15px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: 1.53;
-letter-spacing: normal;
-text-align: left;
-color: #636f88;
-display: inlne-block;
-padding-top: 1%;
-opacity: 0.97;
-
-
-} */
-
-.Please-type-a-location1 {
-background-color: white;
-position: relative;
-top: -269px;
-left:18%;
-width: 200px;
-height: 30px;
-/* font-family: Poppins; */
-font-size: 15px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: 1.53;
-letter-spacing: normal;
-text-align: left;
-color: #636f88;
-display: inlne-block;
-padding-top: 1px;
-padding-bottom: 1px;
-opacity: 0.97;
-
-}
-/* .box{
-  position: relative;
-  display: inline;
-  width: 12%;
-  height: 2%;
-  left: 57%;
-  top: -385px;
-  text-align: center;
-  border: solid 1px white;
-  border-radius: 3px;
-  color: white;
-  padding: 1%;
-} */
-}
 
 @media only screen and (min-width:600px){
 
