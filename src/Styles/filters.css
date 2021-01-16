@@ -1,0 +1,347 @@
+
+.filters-section{
+    height:590px;
+    width:220px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);  
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: 50px;
+  
+  }
+  
+  .filters {
+  width: 55px;
+  height: 20px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-slate-blue);
+  
+  }
+  
+  .location{
+  width: 150px;
+  height: 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  
+  }
+  
+  .dropdown{
+  width: 180px;
+  height: 35px;
+  border-radius: 3px;
+  border: solid 1px #8c96ab;
+  }
+  
+  .details-section{
+    height:25%;
+    width:40%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);  
+    display: block; 
+    position: relative;
+    margin-left: 310px;
+    margin-bottom: 30px;
+  
+  }
+  .left-block
+  {
+    width:30%;
+    height:30%;
+    /* background-color: blue; */
+    display: inline;
+    margin-left: 10px;
+    position: relative;
+  }
+  .right-block{
+    width:65%;
+    height:30%;
+    /* background-color: lightblue; */
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align:top;
+    position: relative;
+    margin-top: 10px;
+   
+  }
+  
+  .imgFood{
+    height: 70px;
+    width: 100px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  
+  .CUISINES-COST-FOR-TWO {
+  width: 100px;
+  height: 18px;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #636f88;
+  margin-left: 30px;
+  display: inline-block;
+  }
+  
+  .Bakery-700 {
+  width: 100px;
+  height: 18px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  display: inline-block;
+  margin-left: 10px;
+  }
+  
+  .Breakfast-Places-in-Mumbai {
+            width: 512px;
+            height: 51px;
+            font-family: Poppins;
+            font-size: 36px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.53;
+            letter-spacing: normal;
+            text-align: left;
+            color: #192f60;
+            margin-left: 50px;
+  }
+  
+  /*Header Section Starts here*/
+  
+  .section1{
+  
+  width: 100%;
+  height: 60px;
+  border: 2px;
+  background-color:  #ce0505;
+  }
+  
+  .Rectangle-login {
+  
+  position:absolute;
+  margin-top: 1.5%;
+  width: 80px;
+  height: 30px;
+  margin-top: 0.5%;
+  padding-top:10px;
+  
+  padding-left:45px;
+  margin-left: 1000px;
+  align-items: center;
+  
+  background-color: #ce0505;
+  color: white;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  
+  }
+  
+  .Ellipse-2 {
+    position: absolute;
+    top: 3%;
+    margin-left: 3%;
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ffffff;
+  
+  }
+  .logo{
+    position:absolute;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    width: 32px;
+    height: 32px;
+    padding-top:5px;
+    padding-left:15px;
+    margin-left: 50px;
+    
+    background-color: white;
+    border: solid 1px white;
+    border-radius: 30px;
+    color: #ce0505;
+  
+    font-family: Poppins;
+  
+    font-size: 23px;
+    font-weight:bold;
+    
+  
+    
+  }
+  
+  .Rectangle-2331 {
+    position:absolute;
+    margin-top: 0.5%;
+    width: 120px;
+    height: 25px;
+    padding-top:10px;
+    /* padding-left:30px; */
+    margin-left: 1100px;
+    text-align: center;
+    background-color: #ce0505;
+    border: solid 1px white;
+    border-radius: 3px;
+    color: white;
+    font-family: Poppins;
+    font-size: 11px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+  }
+  
+  
+  /*Header Section Ends here*/
+  
+  
+  .main1{
+  
+  background-color:#fbfbfb;
+  height: 800px;
+  }
+  .btn{
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    top: 95%;
+    left:25%; 
+    border: 2px;
+    border-radius: 5px; 
+    text-align: center;
+  }
+  .The-Big-Chill-Cakery {
+  width: 298px;
+  height: 43px;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  }
+  
+  .fort {
+  width: 39px;
+  height: 23px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color:#192f60;
+  }
+  
+  .Shop-1-Plot-D-Samruddhi-Complex-Chincholi- {
+  width: 365px;
+  height: 23px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #636f88;
+  }
+  
+  .cost {
+  /* width: 55px; */
+  height: 20px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  }
+  
+  .Sort {
+  width: 37px;
+  height: 25px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  }
+  
+  .Cuisine {
+  width: 51px;
+  height: 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color:#192f60;
+  }
+  
+  .food {
+  width: 87px;
+  height: 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  }

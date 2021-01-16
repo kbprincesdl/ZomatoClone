@@ -1,0 +1,242 @@
+.detailsImg {
+    width: 1430px;
+    height: 500px;
+    margin-top: 10px;
+    padding: 10px;
+
+  }
+
+  .imgdetails{
+    width: 80px;
+    height: 80px;
+    margin-top: 2px;
+    padding: 1px;
+    border-radius: 25px;
+  }
+
+  .modalDiv {
+    position: absolute;
+
+  }
+  
+  .The-Big-Chill-Cakery {
+    width: 398px;
+    height: 43px;
+    margin: 10px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+
+  .Overview {
+    width: 86px;
+    height: 25px;
+    margin: 59px 76px 15.5px 137px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color:#192f60;
+  }
+  .Contact {
+    width: 75px;
+    height: 25px;
+    margin: 59px 646px 15.5px 2px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color:  #192f60;
+  }
+  
+  .About-this-place {
+    width: 281px;
+    height: 31px;
+    margin: 44.5px 2px 50px 116px;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+  .Cuisine {
+    width: 168px;
+    height: 25px;
+    margin: 50px 115px 11px 116px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+  
+  .Bakery-Fast-food {
+    width: 297px;
+    height: 30px;
+    margin: 11px 707px 25px 116px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--dark-slate-blue);
+  }
+
+  .tabs {
+    position: relative;
+    min-height: 200px;
+    clear: both;
+    margin: 50px 0 25px;
+    background: white;
+}
+
+.tab {
+    float: left;
+}
+
+.tab label {
+    background: white;
+    padding: 2px;
+    border: 1px solid white;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+    top: -29px;
+}
+
+.tab [type=radio] {
+    display: none;
+}
+
+.add-button {
+    position: absolute;
+    bottom: -10px;
+    left: 30%;
+}
+
+.content {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border-top: 1px solid gray;
+    opacity: 0;
+}
+
+[type=radio]:checked~label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+    border-bottom: solid 4px red;
+}
+
+[type=radio]:checked~label~.content {
+    z-index: 1;
+    opacity: 1;
+}
+
+.button {
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    width: 200px;
+    height: 35px;
+    opacity: 0.6;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+.heading {
+    width: 298px;
+    height: 43px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.about {
+    width: 181px;
+    height: 31px;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.head {
+    height: 25px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.value {
+    height: 30px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+@media only screen and (max-width: 600px) {
+    .button {
+        position: absolute;
+        left: 55%;
+        top: 40%;
+        width: 200px;
+        height: 35px;
+        opacity: 0.6;
+        border-radius: 3px;
+        background-color: #ffffff;
+    }
+}
