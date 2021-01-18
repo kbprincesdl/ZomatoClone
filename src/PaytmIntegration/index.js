@@ -5,7 +5,7 @@ const qs = require("querystring");
 
 const checksum_lib = require("./Paytm/checksum");
 const config = require("./Paytm/config");
-
+//const order=require('./models/OrdersModel');
 const app = express();
 
 // app.use(express.urlencoded());
@@ -137,8 +137,11 @@ app.post("/callback", (req, res) => {
 
            var _result = JSON.parse(response);
              if(_result.STATUS == 'TXN_SUCCESS') {
-                //  res.send('payment sucess')
-                res.sendFile(__dirname + '/response.html');
+                // res.send('payment sucess')
+                insertOrders(_result);
+                 res.sendFile(__dirname + '/response.html');
+               // res.sendFile(__dirname + `/response.html?${response}`);
+               // res.sendFile(__dirname + `/response.html`+response);  
              }else {
                  //res.send('payment failed')
                  res.sendFile(__dirname + '/failure.html');
@@ -152,6 +155,139 @@ app.post("/callback", (req, res) => {
       });
      });
 });
+
+// insertOrders=async(_result,res)=>{
+//   console.log(_result.STATUS);
+//   console.log(_result.RESPMSG);
+//     // const curency = _result.CURRENCY;
+//     // const msg = _result.RESPMSG;
+    
+//     // const UserOrders = new orders({ STATUS: curency, RESPMSG: msg});
+//     // UserOrders.save();
+
+  
+
+//     try {
+//       const newUser = new order({
+//         'STATUS': _result.STATUS,
+//         'RESPMSG': _result.RESPMSG
+//       });
+
+//       module.exports.create = async (newUser) => {
+//         if (!newUser)
+//             throw new Error('Missing product');
+    
+//         await order.create(newUser);
+//     }
+//       console.log('before save');
+//       // let saveUser = await newUser.save(); //when fail its goes to catch
+//       // console.log(saveUser); //when success it print.
+//       console.log('after save');
+//     } catch (err) {
+//       console.log('err' + err);
+//      // res.status(500).send(err);
+//     }
+
+
+// }
+
+
+
+insertOrders=(_result)=>{
+
+const mongoose = require('mongoose'); 
+
+// Database Connection 
+mongoose.connect('mongodb://localhost:27017/restaurant_db',{ 
+	useNewUrlParser: true, 
+	useCreateIndex: true, 
+	useUnifiedTopology: true
+}); 
+
+// User model 
+const Orders = mongoose.model('order',{ 
+  TXNID: { type: String }, 
+  BANKTXNID: { type: String }, 
+  ORDERID: { type: String }, 
+  TXNAMOUNT: { type: String }, 
+  STATUS: { type: String }, 
+  TXNTYPE: { type: String }, 
+  GATEWAYNAME: { type: String }, 
+  RESPCODE: { type: String }, 
+  RESPMSG: { type: String },
+  BANKNAME: { type: String }, 
+  MID: { type: String }, 
+  PAYMENTMODE: { type: String }, 
+  REFUNDAMT: { type: String }, 
+  TXNDATE: { type: String }
+	
+}); 
+
+var new_user = new Orders({ 
+  TXNID: _result.TXNID, 
+  BANKTXNID: _result.BANKTXNID, 
+  ORDERID: _result.ORDERID, 
+  TXNAMOUNT:_result.TXNAMOUNT, 
+  STATUS: _result.STATUS, 
+  TXNTYPE: _result.TXNTYPE, 
+  GATEWAYNAME:_result.GATEWAYNAME, 
+  RESPCODE: _result.RESPCODE, 
+  RESPMSG:_result.RESPMSG,
+  BANKNAME:_result.BANKNAME, 
+  MID: _result.MID, 
+  PAYMENTMODE:_result.PAYMENTMODE, 
+  REFUNDAMT: _result.REFUNDAMT, 
+  TXNDATE: _result.TXNDATE
+}) 
+
+new_user.save(function(err,result){ 
+	if (err){ 
+		console.log(err); 
+	} 
+	else{ 
+		console.log(result) 
+	} 
+}) 
+
+
+
+  
+}
+
+// app.get("/getorders", (req, res) => {
+  
+// const mongoose1 = require('mongoose'); 
+
+// // Database Connection 
+// mongoose1.connect('mongodb://localhost:27017/restaurant_db',{ 
+// 	useNewUrlParser: true, 
+// 	useCreateIndex: true, 
+// 	useUnifiedTopology: true
+// }); 
+
+
+//   const Orders1 = mongoose1.model('order',{ 
+//     TXNID: { type: String }, 
+//     BANKTXNID: { type: String }, 
+//     ORDERID: { type: String }, 
+//     TXNAMOUNT: { type: String }, 
+//     STATUS: { type: String }, 
+//     TXNTYPE: { type: String }, 
+//     GATEWAYNAME: { type: String }, 
+//     RESPCODE: { type: String }, 
+//     RESPMSG: { type: String },
+//     BANKNAME: { type: String }, 
+//     MID: { type: String }, 
+//     PAYMENTMODE: { type: String }, 
+//     REFUNDAMT: { type: String }, 
+//     TXNDATE: { type: String }
+    
+//   }); 
+  
+//   Orders1.find()
+//   .then(response =>res.status(200).json({ message : 'Orders fetch successsfully ' ,ordersresult :response}))
+//   .catch(err => res.status(500).json( {message : err}))
+// });
 
 app.listen(PORT, () => {
   console.log(`App is listening on Port ${PORT}`);

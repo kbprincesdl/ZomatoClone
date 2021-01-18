@@ -34,6 +34,10 @@ class Header extends React.Component {
         }
     }
 
+    MyOrders=()=>{
+        this.props.history.push('/MyOrders');
+    }
+
     signUp = () => {
         this.setState({ signUpModalIsOpen: true });
     }
@@ -139,6 +143,7 @@ class Header extends React.Component {
                 {!isLoggedIn ? <div className="btn-group login-block">
                     <span onClick={this.login} className="login">LogIn</span>
                     <span onClick={this.signUp} className="signUp">Create an account</span>
+                    <span onClick={this.MyOrders} className="login">MyOrders</span>
                 </div> : <span className="user">{`Logged In As : ${loggedInUser}`}<span className="signUp" style={{marginLeft: '30px'}} onClick={this.handleLogout}>Logout</span></span>}
                 <Modal
 

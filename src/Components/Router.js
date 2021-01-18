@@ -8,6 +8,7 @@ import Details from '../Components/Details';
 import Header from './Header';
 //import Filter from './Filter';
 import Pay from '../Components/Pay';
+import MyOrders from '../Components/MyOrders';
 
 function Router(){
 
@@ -19,6 +20,7 @@ function Router(){
            < Route path="/details" component={Details} />
            < Route path="/filter" component={Filter} />
            < Route path="/Pay" component={Pay} />
+           < Route path="/MyOrders" component={MyOrders} />
           
         </BrowserRouter>
         // default url is subset of second url so child also shows parent /child
