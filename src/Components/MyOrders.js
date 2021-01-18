@@ -37,17 +37,17 @@ class MyOrders extends Component {
                <thead>
                 <tr>
                         
-                        <th scope="col">TXNID</th>
-                        <th scope="col">BANKTXNID</th>
+                        {/* <th scope="col">TXNID</th>
+                        <th scope="col">BANKTXNID</th> */}
                         <th scope="col">ORDERID</th>
                         <th scope="col">TXNAMOUNT</th>
                         <th scope="col">STATUS</th>
                         <th scope="col">TXNTYPE</th>
                         <th scope="col">GATEWAYNAME</th>
-                        <th scope="col">RESPCODE</th>
+                        {/* <th scope="col">RESPCODE</th> */}
                         <th scope="col">RESPMSG</th>
                         <th scope="col">BANKNAME</th>
-                        <th scope="col">MID</th>
+                        {/* <th scope="col">MID</th> */}
                         <th scope="col">PAYMENTMODE</th>
                         <th scope="col">REFUNDAMT</th>
                         <th scope="col">TXNDATE</th>
@@ -60,17 +60,17 @@ class MyOrders extends Component {
                     <tr key={index}>
                                 
                   
-                   <td>{item.TXNID}</td>
-                   <td>{item.BANKTXNID}</td>     
-                   <td >{item.ORDERID}</td>  
+                    {/* <td>{item.TXNID}</td>
+                   <td>{item.BANKTXNID}</td>      */}
+                   <td >{item.ORDERID}</td>
                    <td >{item.TXNAMOUNT}</td>  
                    <td >{item.STATUS}</td>  
                    <td >{item.TXNTYPE}</td>  
                    <td >{item.GATEWAYNAME}</td>  
-                   <td >{item.RESPCODE}</td>  
+                   {/* <td >{item.RESPCODE}</td>   */}
                    <td >{item.RESPMSG}</td>  
                    <td >{item.BANKNAME}</td>                         
-                   <td >{item.MID}</td>  
+                   {/* <td >{item.MID}</td>   */}
                    <td>{item.PAYMENTMODE}</td>  
                    <td >{item.REFUNDAMT}</td>  
                    <td >{item.TXNDATE}</td>  
