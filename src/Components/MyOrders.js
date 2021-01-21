@@ -17,7 +17,7 @@ class MyOrders extends Component {
        // console.log(restaurantId);
         axios({
             method: 'GET',
-            url: `http://localhost:8901/getorders`,
+            url: `https://zomatoclonebackend.herokuapp.com/getorders`,
             headers: { 'Content-Type': 'application/json' }
         }).then(res => this.setState({ Orderitems: res.data.ordersresult }))
             .catch(err => console.log(err))

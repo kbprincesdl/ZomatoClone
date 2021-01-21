@@ -29,7 +29,7 @@ class Wallpaper extends React.Component {
 
         axios({
             method: 'GET',
-            url: `http://localhost:8901/getRestaurantsbycity/${area}`,
+            url: `https://zomatoclonebackend.herokuapp.com/getRestaurantsbycity/${area}`,
             headers: { 'Content-Type': 'application/json' }
         }).then(res => this.setState({ restaurants: res.data.restaurantList }))
             .catch(err => console.log(err))

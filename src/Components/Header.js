@@ -68,7 +68,7 @@ class Header extends React.Component {
         };
         axios({
             method: 'POST',
-            url: 'http://localhost:8901/signup',
+            url: 'https://zomatoclonebackend.herokuapp.com/signup',
             headers: { 'Content-Type': 'application/json' },
             data: signUpObj
         })
@@ -95,7 +95,7 @@ class Header extends React.Component {
         };
         axios({
             method: 'GET',
-            url: 'http://localhost:8901/login',
+            url: 'https://zomatoclonebackend.herokuapp.com/login',
             headers: { 'Content-Type': 'application/json' },
             data: loginObj
         })

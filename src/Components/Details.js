@@ -86,7 +86,7 @@ class Details extends React.Component {
         //api call
         axios({
             method: 'GET',
-            url: `http://localhost:8901/getResById/${restaurantId}`,
+            url: `https://zomatoclonebackend.herokuapp.com/getResById/${restaurantId}`,
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
@@ -103,7 +103,7 @@ class Details extends React.Component {
         // console.log(restaurantId);
         axios({
             method: 'GET',
-            url: `http://localhost:8901/getRestaurantItemsById/${restaurantId}`,
+            url: `https://zomatoclonebackend.herokuapp.com/getRestaurantItemsById/${restaurantId}`,
             headers: { 'Content-Type': 'application/json' }
         }).then(res => this.setState({ items: res.data.ItemsList, orderModalIsOpen: true }))
             .catch(err => console.log(err))
@@ -114,7 +114,7 @@ class Details extends React.Component {
         const { restaurantId } = this.state;
         axios({
             method: 'GET',
-            url: `http://localhost:8901/getRestaurantItemsById/${restaurantId}`,
+            url: `https://zomatoclonebackend.herokuapp.com/getRestaurantItemsById/${restaurantId}`,
             headers: { 'Content-Type': 'application/json' }
         }).then(response => {
             this.setState({ items: response.data.ItemsList, itemModalIsOpen: true })
@@ -232,7 +232,7 @@ class Details extends React.Component {
         form.remove()
     }
     getData = (data) => {
-        return fetch(`http://localhost:8901/paynow`, {
+        return fetch(`https://zomatoclonebackend.herokuapp.com/paynow`, {
             method: "POST",
             headers: {
                 Accept: "application/json",
@@ -256,16 +256,16 @@ class Details extends React.Component {
 
 
     makePaytmCall = () => {
-        // this.props.history.push(`http://localhost:8901`);
+        // this.props.history.push(`https://zomatoclonebackend.herokuapp.com`);
         //const {restaurantId}=this.state;
         axios({
             method: 'POST',
-            url: `http://localhost:8901/paynow`,
+            url: `https://zomatoclonebackend.herokuapp.com/paynow`,
             headers: { 'Content-Type': 'text/html' }
         }).then(response => {
             console.log(response);
         }).catch(error => console.log(error));
-        // fetch("http://localhost:8901/")
+        // fetch("https://zomatoclonebackend.herokuapp.com/")
         // .then(res=>{
         //     console.log(res);
         // }).catch(error=>console.log(error))
@@ -394,7 +394,7 @@ class Details extends React.Component {
                                     <div>
                                         <div onClick={() => this.handleModalClose('formModalIsOpen')}></div>
                                         {/* <form>  */}
-                                        <form className="" action="http://localhost:8901/paynow" method="post">
+                                        <form className="" action="https://zomatoclonebackend.herokuapp.com/paynow" method="post">
                                             {/* <form onClick={this.handleSubmit}>  */}
 
                                             <table className="table table-border table-striped table-hover">

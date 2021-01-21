@@ -23,7 +23,7 @@ class Home extends React.Component{
             //sessionStorage.clear();
         axios({
                 method : 'GET',
-                url:'http://localhost:8901/location',
+                url:'https://zomatoclonebackend.herokuapp.com/location',
                 headers:{'Content-Type':'application/json'}
             
             }).then(response =>{
@@ -34,7 +34,7 @@ class Home extends React.Component{
 
             axios({
                 method : 'GET',
-                url:'http://localhost:8901/mealtype',
+                url:'https://zomatoclonebackend.herokuapp.com/mealtype',
                 headers:{'content-Type':'application/json'}
             }).then(response =>{
                     this.setState({mealtypes :response.data.mealtypes })
