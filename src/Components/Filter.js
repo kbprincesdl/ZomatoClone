@@ -65,7 +65,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'https://zomatoclonebackend.herokuapp.com/filter',
+            url: 'http://localhost:8901/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -79,7 +79,7 @@ class Filter extends React.Component {
 
             axios({
                 method : 'GET',
-                url:'https://zomatoclonebackend.herokuapp.com/location',
+                url:'http://localhost:8901/location',
                 headers:{'Content-Type':'application/json'}
             
             }).then(response =>{
@@ -92,14 +92,14 @@ class Filter extends React.Component {
         // Making location API Call to bind the values in location dropdown
     //     axios({
     //         method: 'GET',
-    //         url: 'https://zomatoclonebackend.herokuapp.com/api/cityList',
+    //         url: 'http://localhost:8901/api/cityList',
     //         headers: { 'Content-Type': 'application/json' }
     //     }).then(response => this.setState({ locationList: response.data.city }))
     //         .catch(err => console.log(err))
     // }
     //     axios({
     //         method: 'GET',
-    //         url: 'https://zomatoclonebackend.herokuapp.com/filter',
+    //         url: 'http://localhost:8901/filter',
     //         headers: { 'Content-Type': 'application/json' },
     //         data: filterObj
     //     }).then(response => {
@@ -114,7 +114,7 @@ class Filter extends React.Component {
 
     //     axios({
     //         method : 'GET',
-    //         url:'https://zomatoclonebackend.herokuapp.com/location',
+    //         url:'http://localhost:8901/location',
     //         headers:{'Content-Type':'application/json'}
         
     //     }).then(response =>{
@@ -153,7 +153,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'https://zomatoclonebackend.herokuapp.com/filter',
+            url: 'http://localhost:8901/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -184,7 +184,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'https://zomatoclonebackend.herokuapp.com/filter',
+            url: 'http://localhost:8901/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -222,7 +222,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'https://zomatoclonebackend.herokuapp.com/filter',
+            url: 'http://localhost:8901/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -252,7 +252,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'https://zomatoclonebackend.herokuapp.com/filter',
+            url: 'http://localhost:8901/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -282,7 +282,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'https://zomatoclonebackend.herokuapp.com/filter',
+            url: 'http://localhost:8901/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
