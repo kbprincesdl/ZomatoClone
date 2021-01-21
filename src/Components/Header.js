@@ -164,24 +164,27 @@ class Header extends React.Component {
                 >
                     <div>
                         <div className="login-heading">Login</div>
-                        <div style={{ marginBottom: '2px' }}>
+                        <div style={{width :'150px', marginBottom: '2px' }}>
                             <GoogleLogin
                                 clientId="398221811516-7g4tdhnemd5ke5gmod0mfp1b9ovpfh1u.apps.googleusercontent.com"
                                 buttonText="Continue with Gmail"
                                 onSuccess={this.responseGoogle}
                                 onFailure={this.responseGoogle}
-                                className="btn google"
+                                // className="btn google"
                                 cookiePolicy={'single_host_origin'}
                             /></div>
+                            <br />
+                            <div  style={{width :'150px'}}>
                         <FacebookLogin
                             appId="241783303998158"
                             textButton="Continue with Facebook"
-                            size="metro"
+                            
                             fields="name,email,picture"
                             callback={this.responseFacebook}
                             cssClass="btn-md fb"
                             icon="fa-facebook-square"
-                        /><br />
+                        /></div>
+                        <br />
                         <button className="btn normal-login">
                             <span className="glyphicon glyphicon-user user-icon"></span>
                             Login with Credentials</button>

@@ -3,6 +3,7 @@ import '../Styles/search.css';         // Importing css file for external styles
 import axios from 'axios';             // Importing axios to make API Calls within the component
 import queryString from 'query-string';// Importing query-string package to parse the values from URL's query string 
 
+import SubHeaher from '../Components/SubHeaher';
 class Filter extends React.Component {
     constructor() {
         super();
@@ -294,9 +295,13 @@ class Filter extends React.Component {
             .catch(err => console.log(err))
     }
     render() {
+       
         const { restaurants, locationList, pageCount, sort ,image,location} = this.state;
         console.log(`restaurantlist ${restaurants}`);
         return (
+            <React.Fragment>
+                 <SubHeaher />
+            
             <div>
                 <div id="myId" className="heading-filter">Breakfast Places to look for food</div>
                 <div className="container-fluid">
@@ -422,6 +427,7 @@ class Filter extends React.Component {
                     </div>
                 </div>
             </div >
+            </React.Fragment>
         )
     }
 }
