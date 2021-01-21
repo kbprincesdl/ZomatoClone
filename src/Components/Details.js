@@ -13,7 +13,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
-import Pay from '../Components/Pay';
+// import Pay from '../Components/Pay';
 import SubHeaher from '../Components/SubHeaher';
 
 // const customStyles = {
